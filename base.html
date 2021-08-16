@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Address</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+
+        #address{
+            margin: 350px;
+            height: 50px;
+            width: 500px;
+            font-size: 21px;
+            margin-right: 10px;
+        }
+        #button_addr{
+            margin-bottom:50px;
+            height: 50px;
+            width: 70px;
+            font-size: 19px;
+        }
+        h1{
+            margin-left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Please Enter an Address</h1>
+    <h2 style="color: red;">{{error}}</h2>
+    <form action="/api/location" method="post">
+        
+        <input type="text" id="address" name="address" placeholder=""> 
+        <button type="submit" id="button_addr" value="Go">Go</button>
+    </form>
+
+</div>
+       
+</body>
+</html>
